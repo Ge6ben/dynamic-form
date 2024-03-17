@@ -18,7 +18,8 @@
     "quasar": "^2.8.0",
     "vee-validate": "^4.12.6",
     "vue": "^3.4.18",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.8.0",
