@@ -11,7 +11,11 @@
 
 <script lang="ts" setup>
 import { z } from 'zod';
-import { FilterKeyValueMap, FilterSchema } from 'components/dynamic-form/types';
+import {
+  AnyObject,
+  FilterKeyValueMap,
+  FilterSchema,
+} from 'components/dynamic-form/types';
 import DynamicForm from 'components/dynamic-form/dynamic-form.vue';
 import { ref } from 'vue';
 import { toTypedSchema } from '@vee-validate/zod';
@@ -102,7 +106,7 @@ const validationSchema = toTypedSchema(
     category: z.object({ value: z.string(), label: z.string() }).optional(),
   })
 );
-const filterValues = ref<Record<string, unknown>>();
+const filterValues = ref<AnyObject>();
 
 const applyFilter = (e: FilterKeyValueMap) => {
   filterValues.value = e;

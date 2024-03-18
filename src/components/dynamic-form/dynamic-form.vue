@@ -4,6 +4,7 @@ import { ref, watch } from 'vue';
 
 import FieldWrapper from './field-wrapper.vue';
 import {
+  AnyObject,
   FieldMappableFilterInfo,
   FilterKeyValueMap,
   FilterSchema,
@@ -17,7 +18,7 @@ export type RRemoteFormProps = {
   /** Hold schema that been suitable to render component */
   fieldsSchema: FilterSchema[];
   /** The model value of filtered values */
-  filterValues: Record<string, unknown> | undefined;
+  filterValues: AnyObject | undefined;
   /** The Components Schema */
   validationSchema: unknown;
 };
@@ -25,10 +26,7 @@ const props = withDefaults(defineProps<RRemoteFormProps>(), {});
 
 const emits = defineEmits<{
   /** Emitted when filter values changes */
-  (event: 'update:filterValues', value: Record<string, unknown>): Record<
-    string,
-    unknown
-  >;
+  (event: 'update:filterValues', value: AnyObject): AnyObject;
   /** Is a custom events fire when click on `apply` button */
   (event: 'click:apply-filter', value: FilterKeyValueMap): FilterKeyValueMap;
   /** emitted when filter values cleared */
