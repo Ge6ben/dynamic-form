@@ -1,5 +1,4 @@
 <template>
-  <div>In the app{{ filterValues }}</div>
   <q-btn @click="handleUpdate">Update form Values</q-btn>
   <DynamicForm
     v-model:filter-values="filterValues"
