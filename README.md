@@ -1,4 +1,4 @@
-# dynamic-form (dynamic-form)
+# Creating Dynamic Forms from Backend Schemas with Vue.js, Quasar, and Zod Validation: Seamless CRM Integration
 
 I'll explore building dynamic forms for modern web apps, with a focus on integrating them seamlessly with CRM systems.
 Using Vue.js for responsive interfaces, Quasar for versatile UI components, and Zod for reliable validation, I'll guide
