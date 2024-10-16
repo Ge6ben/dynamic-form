@@ -17,7 +17,7 @@ const typeToComponentMapper: AnyObject = {
   [RemoteFormSchemaType.string]: QInput,
   [RemoteFormSchemaType.singleChoice]: DropdownField,
 };
-type filterFiled = {
+type filterField = {
   /** Component type*/
   type: RemoteFormSchemaType;
   /** The name that used for validation*/
@@ -27,7 +27,7 @@ type filterFiled = {
   /** Validation Error */
   fieldError?: string;
 };
-const props = withDefaults(defineProps<filterFiled>(), {});
+const props = withDefaults(defineProps<filterField>(), {});
 
 const emits = defineEmits<{
   /** Emitted when modelValue changes */
