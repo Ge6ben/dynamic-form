@@ -1,4 +1,4 @@
-# Creating Dynamic Forms from Backend Schemas with Vue.js, Quasar, and Zod Validation: Seamless CRM Integration
+## Creating Dynamic Forms from Backend Schemas with Vue.js, Quasar, and Zod Validation: Seamless CRM Integration
 
 I'll explore building dynamic forms for modern web apps, with a focus on integrating them seamlessly with CRM systems.
 Using Vue.js for responsive interfaces, Quasar for versatile UI components, and Zod for reliable validation, I'll guide
@@ -11,6 +11,16 @@ I will explain each component's parts, starting from the lowest level and workin
 yarn
 # or
 npm install
+```
+
+
+### Engine Locking
+```
+ "engines": {
+    "node": "^20 || ^18 || ^16",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 ```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
